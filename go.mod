@@ -1,6 +1,6 @@
-module github.com/jackc/go_db_bench
+module github.com/aibotsoft/go_db_bench
 
-go 1.12
+go 1.15
 
 require (
 	github.com/go-pg/pg v8.0.6+incompatible

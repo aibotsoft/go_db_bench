@@ -26,7 +26,7 @@ where id between $1 and $1 + 25
 `
 
 func main() {
-	connPoolConfig, err := pgxpool.ParseConfig("")
+	connPoolConfig, err := pgxpool.ParseConfig("postgres://postgres:postgres@localhost:5432/postgres?sslmode=disable&pool_max_conns=10")
 	if err != nil {
 		fmt.Fprintln(os.Stderr, "pool.ParseConfig failed:", err)
 		os.Exit(1)
